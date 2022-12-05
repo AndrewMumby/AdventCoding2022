@@ -108,7 +108,6 @@ namespace AdventCoding2022
                                 {
                                     question += testText[i] + Environment.NewLine;
                                 }
-                                question = question.Trim();
                                 string actualAnswer = partMethod.Invoke(dayClass, new object[] { question }).ToString();
                                 Console.Write("Test " + testFileName + ": ");
                                 if (actualAnswer.Equals(correctAnswer))
