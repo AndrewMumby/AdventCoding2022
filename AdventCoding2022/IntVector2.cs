@@ -28,6 +28,14 @@ namespace AdventCoding2022
             new IntVector2(1,1)
         };
 
+        internal static List<IntVector2> DiagonalDirections = new List<IntVector2> {
+            new IntVector2(1, -1),
+            new IntVector2(-1, 1),
+            new IntVector2(1, 1),
+            new IntVector2(-1, -1)
+        };
+
+
         public IntVector2(int x, int y)
         {
             this.x = x;
@@ -87,9 +95,19 @@ namespace AdventCoding2022
             return Math.Abs(coord.x - x) + Math.Abs(coord.y - y);
         }
 
+        internal int CrowDistance(IntVector2 coord)
+        {
+            return Math.Max(Math.Abs(coord.x - x), Math.Abs(coord.y - y));
+        }
+
         internal static int Distance(IntVector2 a, IntVector2 b)
         {
             return Math.Abs(a.x - b.x) + Math.Abs(a.y - b.y);
+        }
+
+        internal static int CrowDistance(IntVector2 a, IntVector2 b)
+        {
+            return Math.Max(Math.Abs(a.x - b.x), Math.Abs(a.y - b.y));
         }
 
         public override bool Equals(Object obj)
