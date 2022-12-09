@@ -52,6 +52,7 @@
     <Compile Include="Day6.cs" />
     <Compile Include="Day7.cs" />
     <Compile Include="Day8.cs" />
+    <Compile Include="Day9.cs" />
     <Compile Include="IntCuboid.cs" />
     <Compile Include="IntField2.cs" />
     <Compile Include="IntVector2.cs" />
