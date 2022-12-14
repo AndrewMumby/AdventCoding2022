@@ -129,9 +129,19 @@ namespace AdventCoding2022
             return new IntVector2(vector1.x + vector2.x, vector1.y + vector2.y);
         }
 
+        internal static IntVector2 Subtract(IntVector2 vector1, IntVector2 vector2)
+        {
+            return new IntVector2(vector1.x - vector2.x, vector1.y - vector2.y);
+        }
+
         internal IntVector2 Add(IntVector2 vector)
         {
             return IntVector2.Add(this, vector);
+        }
+
+        internal IntVector2 Subtract (IntVector2 vector)
+        {
+            return IntVector2.Subtract(this, vector);
         }
 
         internal static IntVector2 Multiply(IntVector2 vector, int quantity)
