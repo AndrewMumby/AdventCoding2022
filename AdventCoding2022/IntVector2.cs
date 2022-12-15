@@ -110,6 +110,17 @@ namespace AdventCoding2022
             return Math.Max(Math.Abs(a.x - b.x), Math.Abs(a.y - b.y));
         }
 
+        internal int Distance(int x, int y)
+        {
+            return Math.Abs(this.x - x) + Math.Abs(this.y - y);
+        }
+
+        internal int CrowDistance(int x, int y)
+        {
+            return Math.Max(Math.Abs(this.x - x), Math.Abs(this.y - y));
+        }
+
+
         public override bool Equals(Object obj)
         {
             //Check for null and compare run-time types.
