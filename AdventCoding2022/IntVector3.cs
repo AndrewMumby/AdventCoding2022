@@ -13,7 +13,7 @@ namespace AdventCoding2022
         int z;
         internal static List<IntVector3> CardinalDirections = new List<IntVector3>
         {
-            new IntVector3(0, 0, 1),
+            new IntVector3(0, 0, -1),
             new IntVector3(0, -1, 0),
             new IntVector3(-1, 0, 0),
             new IntVector3(1, 0, 0),
