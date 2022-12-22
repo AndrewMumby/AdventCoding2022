@@ -42,9 +42,9 @@ namespace AdventCoding2022
             }
         }
 
-        internal int GetValue(IntVector2 start)
+        internal int GetValue(IntVector2 pos)
         {
-            return GetValue(start.X, start.Y);
+            return GetValue(pos.X, pos.Y);
         }
 
 
