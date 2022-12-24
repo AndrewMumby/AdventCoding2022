@@ -159,7 +159,7 @@ namespace AdventCoding2022
 
         public override int GetHashCode()
         {
-            return x ^ y ^ z;
+            return (x,y,z).GetHashCode();
         }
 
         public int CompareTo(object obj)
